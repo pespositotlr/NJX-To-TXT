@@ -141,7 +141,7 @@ def convert(src: Path, out_dir: Path | None, overwrite: bool) -> str:
 def files_with_prefix(folder: Path, prefix: str) -> list[Path]:
     """NJX files named <prefix><optional space><number>..., e.g. with prefix
     "Manga_Title": "Manga_Title 012.NJX", "Manga_Title012.NJX",
-    "Manga_Title 14.5.NJX" -- but not "Manga_Title Rouge 01.NJX"."""
+    "Manga_Title 14.5.NJX" -- but not "Manga_Title The_Sequel 01.NJX"."""
     pattern = re.compile(re.escape(prefix) + r'\s*\d', re.IGNORECASE)
     matches = [p for p in folder.iterdir()
                if p.is_file() and p.suffix.lower() == '.njx' and pattern.match(p.stem)]

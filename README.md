@@ -28,7 +28,7 @@ python njx_to_txt.py
 | Option | Meaning |
 |---|---|
 | `files` | `.NJX` files to convert. |
-| `-p`, `--prefix` | Convert every file named `<prefix><number>…`, e.g. `Manga_Title 012.NJX`, `Manga_Title012.NJX`, `Manga_Title 14.5.NJX`. Not case-sensitive. A different series that merely starts the same way (`Manga_Title Side Story 01.NJX`) isn't included. |
+| `-p`, `--prefix` | Convert every file named `<prefix><number>…`, e.g. `Manga_Title 012.NJX`, `Manga_Title012.NJX`, `Manga_Title 14.5.NJX`. Not case-sensitive. A different series that merely starts the same way (`Manga_Title The_Sequel 01.NJX`) isn't included. |
 | `-f`, `--folder` | Folder to search with `--prefix` (default: the current folder). |
 | `-o`, `--output` | Folder for the `.txt` files (default: next to each `.NJX`). |
 | `--overwrite` | Replace `.txt` files that already exist. Without it they're skipped, so a `.txt` you've edited is never clobbered. |
